@@ -27,7 +27,11 @@ ai extension run korte age dekte hobe
   => ts-node
 2. ts-node install korte 
   => npm install -g ts-node typescript
+  => npm uninstall typescript ts-node
 
 3. globally install করা npm packages এর list 
   => npm list -g --depth=0
 
+localy code runner set=>
+1st => npm install --save-dev typescript ts-node
+2nd > tsc --init
