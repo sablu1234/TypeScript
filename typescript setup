@@ -1,3 +1,5 @@
+#Official documentaions => https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+================================================================================================================
 # TypeScript setup process
 1. TypeScript setup a obossoi node and npm install thakte hobe
   check node install ase kina => node -v
