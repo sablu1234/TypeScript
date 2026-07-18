@@ -19,3 +19,15 @@ vs code a output dekte
   => tsc index.ts
 2. Next, "node" ar pore new create hoya file name liko tahole output dekabe
   => node index.js
+
+
+==============================Code Runner(Jun Han)===========================================
+ai extension run korte age dekte hobe 
+1. ts-node ata install ase kina 
+  => ts-node
+2. ts-node install korte 
+  => npm install -g ts-node typescript
+
+3. globally install করা npm packages এর list 
+  => npm list -g --depth=0
+
