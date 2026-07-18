@@ -1,6 +1,20 @@
-#typescript setup profess
-1. typscript set up a obossoi node and npm install thakte hobe
+# TypeScript setup process
+1. TypeScript setup a obossoi node and npm install thakte hobe
   check node install ase kina => node -v
   check npm install ase kina  => npm -v
 
-  #jodi install na thake install dite hobe
+2. Next, install TypeScript
+  => npm install -g typescript
+
+3. TypeScript install ase kina check dite
+  => tsc
+
+4. Uninstall TypeScript 
+  => npm uninstall -g typescript
+
+=====================================================================
+vs code a output dekte 
+1. je file a asi oi pathe a terminal a jao and "tsc" and tar sathe file name deo ata korle index.js file create hobe
+  => tsc index.ts
+2. Next, "node" ar pore new create hoya file name liko tahole output dekabe
+  => node index.js
