@@ -8,6 +8,7 @@
 
 3. TypeScript install ase kina check dite
   => tsc
+  or=> tsc --version
 
 4. Uninstall TypeScript 
   => npm uninstall -g typescript
