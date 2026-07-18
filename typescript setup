@@ -13,6 +13,20 @@
 4. Uninstall TypeScript 
   => npm uninstall -g typescript
 
+5. AMRA   organize kore jagate ata use korbo
+  => tsc --init
+  ata dile ai file create hobe "tsconfig.json"
+  ar je je file a ami typescript or js rakbo ta define korbo ai file a 
+    "rootDir": "./src",
+    "outDir": "./output",
+    "module": "ESNext",
+
+    HTML FILEA ar sathe connect korte "module" use korte hobe type
+  => <script type="module" src="./output/script.js"></script>
+
+5. Amra  jodi instant oputput dekte chai tsc type na kore niser commnad dilei hobe
+  => tsc -w
+
 =====================================================================
 vs code a output dekte 
 1. je file a asi oi pathe a terminal a jao and "tsc" and tar sathe file name deo ata korle index.js file create hobe
