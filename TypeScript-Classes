@@ -1,0 +1,26 @@
+#typescript a classe ar use 
+===========================================================
+class Player{
+    name: string;
+    age: number;
+    country: string;
+
+    constructor(n:string, a:number, c:string){
+        this.name=n;
+        this.age=a;
+        this.country=c;
+    }
+
+    play(){
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+
+const masrafi = new Player("masrafi", 40,"Bangladesh");
+const shakib = new Player("shakib", 38,"Bangladesh");
+
+
+
+const players: Player[] =[];
+
+players.push(shakib);
