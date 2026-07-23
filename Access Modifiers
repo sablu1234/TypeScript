@@ -1,0 +1,26 @@
+#amar jodi access modifier use kori tobe shortcut a korte parbo this use korte hobe na but abar jodi name change korte chai tobe ager niyome korte hoeb
+=========================================================================
+class Player {
+    constructor(
+        private name: string,
+        public age: number,
+        readonly country: string,
+    ) {}
+
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+
+const masrafi = new Player("masrafi", 40, "Bangladesh");
+const shakib = new Player("shakib", 38, "Bangladesh");
+
+
+
+console.log(shakib)
+console.log(shakib.country)
+const players: Player[] = [];
+
+players.push(shakib);
+
+console.log()
