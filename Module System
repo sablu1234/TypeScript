@@ -1,0 +1,43 @@
+class lesson 11 => source("https://www.youtube.com/watch?v=lnup-9bBCUQ")
+#Module System amra jodi "Module System" use korte chai, mane dhoro akta class alada file-e ase ami main "TS" file theke access korte chai
+ata asole main file "script.ts" atar sathe other ts file connect korte hobe, but je filea connect korbo seta kintu "from" ar somoi js likte hobe like=> import { Player } from './classes/Player.js'
+ar index.html a type=module deytar karon holo browser k bojhano amara module system use korsi
+AGE=> 
+    "module": "es2015",
+    "target": "es6",
+ai duita tsconfig.json ai file a dite hobe.
+ar index.html file a module use korte hobe => <script type="module" src="/output/script.js"></script>
+======================================================================================================================================
+src>
+  =>classes
+    =>Player.ts
+  -> script.ts
+index.html
+
+
+akhon=>
+
+script.ts=>
+import { Player } from './classes/Player.js'
+
+const masrafi = new Player("masrafi", 40, "Bangladesh");
+const shakib = new Player("shakib", 38, "Bangladesh");
+console.log(shakib.country)
+const players: Player[] = [];
+players.push(shakib);
+console.log()   
+
+ata use korle ai class ami "script.ts" ai main file a use korte parbo=====================================
+Player.ts=>
+  export class Player {
+    constructor(
+        private name: string,
+        public age: number,
+        readonly country: string,
+    ) { }
+
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+
