@@ -1,0 +1,72 @@
+#Interfaces - TypeScript amra "Type" ar moto use korte pari ata type ar theke udpate (ata muloto code ar or fucniton ar shape dei )
+==============================================================================
+#interface use in object but ata strict mode a hobe
+interface RectangleOptions{
+    width: number;
+    length: number;
+}
+function drawRectangle(options:RectangleOptions){
+    let width= options.width;
+    let length= options.length;
+}
+
+drawRectangle({
+    width: 30,
+    length: 20
+})
+
+=>akhane jodi amr strict mode sara interface use korte chai "threeDoptions" ai variable a rekeo same kaj korte pari jekhan height funciton a nai tao deya jasse error nai
+let threeDoptions ={
+    width:30,
+    length:20,
+    height:10
+};
+drawRectangle(threeDoptions);
+
+==========================================================================
+#interface use in class (import class thik moto kaj ma korle ata use koro=> "verbatimModuleSyntax": false,) interface a "private" property use kote parben na jodi private proerty use korai lage
+tahole private ar public funciton interface a diye dite parve
+====================================
+src>
+  =>classes
+    =>Player.ts
+  =>interfaces
+    =>IsPlayer.ts
+  -> script.ts
+index.html
+-------------------------------------
+IsPlayer.ts=>---
+export interface IsPlayer {
+    name:string;
+    readonly country: string;
+
+    play(): void;
+    getProperty(): number;
+}
+
+Player.ts=>---
+import { IsPlayer } from '../interfaces/IsPlayer.js';
+
+export class Player implements IsPlayer{
+    constructor(
+        public name: string,
+        private age: number,
+        readonly country: string,
+    ) { }
+
+    getProperty(){
+        return this.age;
+    }
+
+    play() {
+        console.log(`${this.name} from ${this.country} is playing`);
+    }
+}
+
+script.ts=>--------
+import { Player } from './classes/Player.js'
+import { IsPlayer, Player } from './interfaces/IsPlayer.js'
+
+const masrafi = new Player("masrafi", 40, "Bangladesh");
+let shakib: IsPlayer;
+shakib = new Player("Sakib",35, "Bangladesh");
