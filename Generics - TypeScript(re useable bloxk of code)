@@ -1,6 +1,6 @@
 #amra jodi code re-use korte chai ata use korte pari
 ========================================================
-#akhon amra generic vabe vaky ja dibe suggestion a tai pab
+#akhon amra generic vabe valu ja dibe suggestion a tai pab
 //cenerics 
 
 const addId = <T>(obj: T) => {
