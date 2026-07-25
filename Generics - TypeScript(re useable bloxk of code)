@@ -1,0 +1,59 @@
+#amra jodi code re-use korte chai ata use korte pari
+========================================================
+#akhon amra generic vabe vaky ja dibe suggestion a tai pab
+//cenerics 
+
+const addId = <T>(obj: T) => {
+    const id= Math.floor(Math.random() * 100);
+    return { ...obj,id };
+};
+
+let user= addId({
+    name: "Mashrafi",
+    age:40,
+    country: "Bangladesh",
+});
+
+user.country 
+
+=> but akhane string dileo eta nibe ar solution ar jonno=> nsier ta use korle akhon sting dile error dekabe
+const addId = <T extends object>(obj: T) => {
+    const id = Math.floor(Math.random() * 100);
+    return { ...obj, id };
+};
+
+let user = "Masrafi";
+addId(user);
+
+=> amra jodi akhon object ar akta type dite chai 
+//cenerics
+
+const addId = <T extends {
+    name: string;
+    age: number;
+}>(obj: T) => {
+    const id = Math.floor(Math.random() * 100);
+    return { ...obj, id };
+};
+
+let user = addId({
+    name: "Mashrafi",
+    age: 40,
+    country: "Bangladesh",
+});
+addId(user);
+
+
+=====================================================
+interface ar khatre "generic" ar use
+//cenerics
+interface APIResponse<T>{
+    status: number;
+    type: string;
+    data: T;
+}
+const response1: APIResponse<string> ={
+    status:200,
+    type: 'good',
+    data: "test"
+}
