@@ -1,4 +1,4 @@
-#enum হলো কিছু fixed value-এর collection।
+#enum হলো কিছু fixed value-এর collection। (source=> "https://www.youtube.com/watch?v=axNr9zCgbLc")
 //ENUMS
 
 enum RType{SUCCESS, FAILURE, UNAUTHENTICATION, FORBIDDEN};
