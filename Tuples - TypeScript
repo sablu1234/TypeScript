@@ -1,0 +1,9 @@
+#amra normally niser mane amra a array ar value jekono kisu change kote pari. but  (number, string, obj) ar type ar modhe dite hobe but orader maintain korar dorkar nai
+but amra jodi order maintain korte chai 
+
+let a = [3, 'hello', { p: 3 }];
+a[1]= 5;
+
+=> but tuples use korle amra same order exact age mention kora type value ee use korte hobe
+let b: [number, string,object]=[4,'world',{t:1}]
+b[1]='hello';
